@@ -1,0 +1,9 @@
+# Render 部署配置
+services:
+  - type: web
+    name: mail-service
+    runtime: node
+    buildCommand: npm run build
+    startCommand: npm run start
+    env:
+      NODE_VERSION: "22"
